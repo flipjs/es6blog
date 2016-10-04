@@ -7,8 +7,8 @@ console.log(map.get('name'))
 console.log(map.get('age'))
 
 let person = {
-	name: 'Chris',
-	age: 30
+  name: 'Chris',
+  age: 30
 }
 
 map.set(person, 'pool')

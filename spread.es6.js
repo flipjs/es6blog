@@ -1,5 +1,6 @@
+'use strict'
 let doThing = (a,b,c) => {
-	return a + b + c
+  return a + b + c
 }
 
 let x = doThing(...[1,2,3,4]) // 4 is ignored

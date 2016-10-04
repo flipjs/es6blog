@@ -1,6 +1,7 @@
+'use strict'
 let doSomething = (name) => {
-	let msg = `Hello, ${name}`
-	return msg
+  let msg = `Hello, ${name}`
+  return msg
 }
 
 console.log(doSomething('Philip'))
@@ -23,21 +24,11 @@ let y = 20
 console.log(`x is ${x} and y is ${y}`)
 
 let obj = {
-	a: 'philip',
-	b: 'apostol'
+  a: 'philip',
+  b: 'apostol'
 }
 
 let {a:first, b:last} = obj
 
 console.log(`first is ${first} and last is ${last}`)
-
-
-
-
-
-
-
-
-
-
 

@@ -1,18 +1,19 @@
+'use strict'
 let sum = function(...numbers) {
-	let result = 0
-	for (let i = 0, len = numbers.length; i < len; i++) {
-		result += numbers[i]
-	}
-	return result
+  let result = 0
+  for (let i = 0, len = numbers.length; i < len; i++) {
+    result += numbers[i]
+  }
+  return result
 }
 
 let test = sum(1,2,3,4)
 console.log(test)
 
 let mult = function(name, ...numbers) {
-	return numbers.length && numbers.reduce((prev, curr) => {
-		return prev * curr
-	})
+  return numbers.length && numbers.reduce((prev, curr) => {
+    return prev * curr
+  })
 }
 
 let prod = mult('test', 1,2,3,4)

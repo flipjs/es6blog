@@ -1,3 +1,4 @@
+'use strict'
 console.log('=====================================')
 let set = new Set()
 set.add('philip')
@@ -9,13 +10,13 @@ set.add(123)
 set.add(123)
 set.add(123)
 let obj = {
-	name: 'fantastatic',
-	interests: ['pool', 'darts', 'photography']
+  name: 'fantastatic',
+  interests: ['pool', 'darts', 'photography']
 }
 set.add(obj)
 obj = {
-	name: 'flipjs',
-	interests: ['pool', 'darts', 'photography']
+  name: 'flipjs',
+  interests: ['pool', 'darts', 'photography']
 }
 set.add(obj)
 set.add(obj)
@@ -26,15 +27,15 @@ set.delete(obj) // will delete flips
 console.log('size: ', set.size)
 
 obj = {
-	name: 'fantastatic',
-	interests: ['pool', 'darts', 'photography']
+  name: 'fantastatic',
+  interests: ['pool', 'darts', 'photography']
 }
 set.delete(obj) // even though the new obj has the same data inside set, they are different obj, thus nothing was deleted
 console.log('size: ', set.size)
 
 // log out all items in set
 for (let item of set) {
-	console.log(item)
+  console.log(item)
 }
 
 let iterator = set.values()
